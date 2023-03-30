@@ -11,7 +11,9 @@
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
     "lint": "eslint --ext .js,.vue src",
     "test:unit": "jest --clearCache && vue-cli-service test:unit",
-    "test:ci": "npm run lint && npm run test:unit"
+    "test:ci": "npm run lint && npm run test:unit",
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "axios": "0.18.1",
@@ -38,6 +40,7 @@
     "chalk": "2.4.2",
     "connect": "3.6.6",
     "eslint": "6.7.2",
+    "eslint-define-config": "^1.5.1",
     "eslint-plugin-vue": "6.2.2",
     "html-webpack-plugin": "3.2.0",
     "mockjs": "1.0.1-beta3",
